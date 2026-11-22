@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tell the browser both themes are supported before first paint -->
+    <meta name="color-scheme" content="light dark" />
+    <title>Survey Platform</title>
+    <link rel="icon" href="./brand/sp-mark.svg" />
+    <meta
+      name="description"
+      content="Multilingual, anonymous surveys."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Apply the saved theme before rendering to avoid a flash of the wrong one -->
+    <script>
+      // Light is the default; only a stored "dark" switches it.
+      try {
+        if (localStorage.getItem("sp_theme") === "dark") {
+          document.documentElement.dataset.theme = "dark";
+        }
+      } catch (e) {}
+    </script>
+    <!-- This installation's settings (editable on the web server, no rebuild needed).
+         The name, icon and description above are replaced from them on load. -->
+    <script src="./config.js"></script>
+    <script type="module" crossorigin src="./assets/index-C440VxMS.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-D0nrqMuw.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
